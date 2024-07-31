@@ -1,0 +1,80 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.cart-container{
+    display: flex;
+    flex-wrap: wrap;
+   gap: 10px;
+   width: 70%;
+}
+
+.box{
+    height: 180px;
+    width: 180px;
+    background-color:grey;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.cart-container .image{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    margin-bottom: 10px;
+}
+
+aside {
+    margin-left: 10px;
+}
+
+#aside-container{
+    height: 90%;
+    width: 27%;
+    background-color: white;
+    color: black;
+    position: fixed;
+    right: 10px;
+    top:20px;
+    border-radius: 10px;
+}
+
+.add-people{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    height: 5%;
+    width: 40%;
+    background-color: cadetblue;
+}
+
+#search-people{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 4%;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.contributors-name{
+    height: 65%;
+    border:1px solid black ;
+}
+
+#footer {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
