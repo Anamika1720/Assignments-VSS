@@ -3,33 +3,50 @@ body{
     color: white;
 }
 
+/* #container {
+    background-color: black;
+    color: white;
+} */
+
 .cart-container{
     display: flex;
     flex-wrap: wrap;
    gap: 10px;
    width: 70%;
+   /* padding: 10px; */
 }
 
 .box{
-    height: 180px;
-    width: 180px;
+    height: 130px;
+    width: 250px;
     background-color:grey;
     display: flex;
     align-items:center;
     justify-content: center;
     border-radius: 10px;
-}
-
-.cart-container .image{
-    height: 50px;
-    width: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
 }
 
 .name {
-    margin-bottom: 10px;
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    padding:3px;
+}
+
+
+.cart-container .image{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.image{
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 aside {
@@ -71,10 +88,121 @@ aside {
 .contributors-name{
     height: 65%;
     border:1px solid black ;
+    padding: 12px;
+}
+
+.people{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+
+
+
+#message-sidebar {
+    height: 90%;
+    width: 27%;
+    background-color: #fff;
+    color: black;
+    position: fixed;
+    right: 10px;
+    top: 20px;
+    border-radius: 10px;
+    display: none; 
+}
+
+#msg-aside-container {
+    padding: 10px;
+}
+
+.messages{
+    padding: 12px;
+}
+
+.in-call-msg{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+}
+
+.msg-para{
+    border: 1px solid black;
+    padding: 12px;
+    margin-top: 12px;
+}
+
+.name-time-msg{
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 12px;
+    
+}
+
+.name-time span{
+    border: 1px solid black;
+    padding: 4px;
+}
+
+.msg-in-call{
+    border: 1px solid black;
+    padding: 4px;
+    margin-top: 15px;
+}
+
+#input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    padding: 12px;
+    margin-top: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.popup{
+    height: 100px;
+    width: 150px;
+    background-color: turquoise;
+    color: black;
+    border: 1px solid black;
+    padding: 12px;
+    text-align: center;
+    position: fixed;
+    right: 400px;
+    top: 200px;
+    border: 10px;
+    display: none;
+}
+
+.popup-to-add-people{
+    display: flex;
 }
 
 #footer {
     margin-top: 5px;
     display: flex;
     justify-content: space-between;
+}
+
+.footer2, 
+.footer3 {
+    display: flex;
+    gap: 12px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.circle{
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 50%;
 }
